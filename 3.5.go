@@ -11,7 +11,7 @@ import (
 
 func main() {
 	rem := 0
-	for i := 10, i <= 100, i++ {
+	for i := 10; i <= 100; i++ {
 		rem = i % 4
 		fmt.Println(rem)
 	}
