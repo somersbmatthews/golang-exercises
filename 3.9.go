@@ -10,3 +10,15 @@ package main
 import (
 	"fmt"
 )
+
+var favSport string = "golf"
+
+func main() {
+	switch {
+	case "tennis":
+		fmt.Println("should not print")
+	case "golf": 
+		fmt.Println("golf is my favorite sport")
+	}
+}
+
