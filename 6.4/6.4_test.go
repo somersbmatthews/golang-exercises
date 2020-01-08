@@ -1,8 +1,6 @@
 package main
 
-import (
-	
-)
+import ()
 
 func ExampleSpeak() {
 	p1 := Person{
