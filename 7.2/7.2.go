@@ -8,6 +8,10 @@ type person struct {
 	name string
 }
 
+func main() {
+	setValue()
+}
+
 func setValue() {
 	p1 := person{
 		name: "James Bond",
