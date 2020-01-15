@@ -10,16 +10,16 @@ func ExampleJsonUnmarshal() {
 	// Person # 0
 	// 	 James Bond 32
 	// 	         Shaken, not stirred
-	// 				Youth is no guarantee of innovation
-	// 				In his majesty's royal service
+	// 	         Youth is no guarantee of innovation
+	// 	         In his majesty's royal service
 	// Person # 1
 	// 	 Miss Moneypenny 27
-	// 				James, it is soo good to see you
-	// 				Would you like me to take care of that for you, James?
-	// 				I would really prefer to be a secret agent myself.
+	// 	         James, it is soo good to see you
+	// 	         Would you like me to take care of that for you, James?
+	// 	         I would really prefer to be a secret agent myself.
 	// Person # 2
 	// 	 M Hmmmm 54
-	// 				Oh, James. You didn't.
-	// 				Dear God, what has James done now?
-	// 				Can someone please tell me where James Bond is?
+	// 	         Oh, James. You didn't.
+	// 	         Dear God, what has James done now?
+	// 	         Can someone please tell me where James Bond is?
 }
