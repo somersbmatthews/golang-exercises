@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 	"sync"
 	"sync/atomic"
 )
@@ -19,12 +20,14 @@ func AtomicRun() {
 
 	for i := 0; i < gs; i++ {
 		go func() {
-			atomic.AddInt64(&incrementer, 1)
-			r := atomic.LoadInt64(&incrementer)
-			fmt.Println(r)
+			newValue := atomic.AddInt64(&incrementer, 1)
+			println(newValue)
+
 			wg.Done()
+			runtime.Gosched()
 		}()
 	}
 	wg.Wait()
 	fmt.Println("end value", incrementer)
+
 }
